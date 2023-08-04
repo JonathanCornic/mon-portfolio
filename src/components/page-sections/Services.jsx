@@ -1,7 +1,7 @@
 
 export default function Services() {
   return (
-    <div id="Services" className="w-full h-screen">
+    <div id="Services" className="section text-primary">
       Services
     </div>
   )

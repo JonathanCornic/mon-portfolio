@@ -2,18 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background: #000;
-}
+@layer base {
+    body {
+        @apply font-secondary text-primary bg-[#1C1318];
+    }
 
+    h1 {
+        @apply font-primary text-4xl font-bold lg:text-7xl xl:text-8xl;
+    }
+
+    h2 {
+        @apply font-primary;
+    }
+
+    p {
+        @apply font-secondary text-xs md:text-sm lg:text-lg xl:text-2xl;
+    }
+
+    .section {
+        @apply py-8 lg:py-24 lg:h-screen w-full flex items-center justify-center;
+    }
+
+    .text-gradient {
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-[#f7ab0a] to-[#f0650a];
+    }
+
+    .bg-gradient {
+        @apply bg-gradient-to-r from-[#f7ab0a] to-[#f0650a];
+    }
+}
 
 @media screen and (max-width: 1023px) {
     .active {
-        background-color: rgb(255, 179, 0);
+        @apply bg-gradient-to-r from-[#f7ab0a] to-[#f0650a];
     }
 }
+
 @media screen and (min-width: 1023px) {
     .active {
-        color: red;
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-[#f7ab0a] to-[#f0650a]
     }
 }
