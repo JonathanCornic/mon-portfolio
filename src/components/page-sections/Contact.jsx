@@ -2,7 +2,7 @@
 
 export default function Contact() {
   return (
-    <div>
+    <div id="Contact" className="w-full h-screen">
       Contact
     </div>
   )
