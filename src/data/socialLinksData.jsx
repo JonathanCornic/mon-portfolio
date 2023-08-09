@@ -30,7 +30,7 @@ const links = [
                 <BsFillPersonLinesFill size={30} />
             </>
         ),
-        href: '',
+        href: '/cv.pdf',
         download: true,
     },
 ]

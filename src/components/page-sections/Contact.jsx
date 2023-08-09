@@ -17,7 +17,7 @@ export default function Contact() {
                         className="flex-1 flex flex-col items-start justify-center py-5"
                     >
                         <h2 className="text-gradient">Un projet ?</h2>
-                        <p className="text-3xl lg:text-6xl xl:text-8xl">
+                        <p className="text-3xl lg:text-6xl xl:text-7xl">
                             Travaillons <br /> ensemble!
                         </p>
                     </motion.div>
