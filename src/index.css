@@ -23,7 +23,7 @@
     }
 
     .section {
-        @apply min-h-screen w-full flex items-center justify-center p-3 xl:p-0;
+        @apply min-h-screen w-full flex items-center justify-center overflow-x-hidden p-3 xl:p-0;
     }
 
     .text-gradient {

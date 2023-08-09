@@ -8,7 +8,7 @@ export default function Contact() {
     return (
         <section id="Contact" className="section">
             <div className="container mx-auto">
-                <div className="flex flex-col lg:flex-row gap-x-10 py-10">
+                <div className="flex flex-col lg:flex-row py-10">
                     <motion.div
                         variants={fadeIn('right', 0.3)}
                         initial="hidden"
