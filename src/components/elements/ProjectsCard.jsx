@@ -1,55 +1,6 @@
-import { FaGithub } from 'react-icons/fa'
-import { AiFillProfile } from 'react-icons/ai'
-const projets = [
-    {
-        id: 1,
-        name: 'kasa',
-        iconGithub: (
-            <>
-                <FaGithub size={30} />
-            </>
-        ),
-        iconHosting: (
-            <>
-                <AiFillProfile size={30} />
-            </>
-        ),
-        linkGithub: 'https://github.com/JonathanCornic/kasa',
-        linkHosting: 'https://kasa-2m0.pages.dev/',
-    },
-    {
-        id: 2,
-        name: 'burger-house',
-        iconGithub: (
-            <>
-                <FaGithub size={30} />
-            </>
-        ),
-        iconHosting: (
-            <>
-                <AiFillProfile size={30} />
-            </>
-        ),
-        linkGithub: 'https://github.com/JonathanCornic/burger-house',
-        linkHosting: 'https://burger-house.pages.dev/',
-    },
-    {
-        id: 3,
-        name: 'portfolio-nina-carducci',
-        iconGithub: (
-            <>
-                <FaGithub size={30} />
-            </>
-        ),
-        iconHosting: (
-            <>
-                <AiFillProfile size={30} />
-            </>
-        ),
-        linkGithub: 'https://github.com/JonathanCornic/Portfolio-nina-carducci',
-        linkHosting: 'https://portfolio-nina-carducci.pages.dev/',
-    },
-]
+import projets from '../../data/projectsData'
+import { motion } from 'framer-motion'
+import fadeIn from '../../variants'
 
 export default function ProjectsCard() {
     return (
@@ -62,37 +13,57 @@ export default function ProjectsCard() {
                     linkHosting,
                     iconGithub,
                     iconHosting,
+                    imgPreview,
                 }) => (
-                    <div
+                    <motion.div
                         key={id}
                         name={name}
-                        className="w-96 h-72 border flex items-end rounded-lg"
+                        variants={fadeIn('up', 0.3)}
+                        initial="hidden"
+                        whileInView={'show'}
+                        viewport={{ once: false, amount: 0.3 }}
+                        className="w-96 border rounded-lg overflow-hidden hover:border-yellow-700 transition-all duration-1000"
                     >
-                        <a
-                            href={linkGithub}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-full h-100%"
+                        <motion.div
+                            variants={fadeIn('right', 0.3)}
+                            initial="hidden"
+                            whileInView={'show'}
+                            viewport={{ once: false, amount: 0.3 }}
+                            className="overflow-hidden"
                         >
-                            <div className="hover:bg-gradient flex-1 w-full h-16 rounded-bl-lg">
-                                <div className="flex justify-center items-center h-full">
-                                    {iconGithub}
+                            <img
+                                src={imgPreview}
+                                alt={name}
+                                className="rounded-t-lg object-cover hover:scale-110 transition-all duration-700"
+                            />
+                        </motion.div>
+                        <div className="flex items-end">
+                            <a
+                                href={linkGithub}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-full h-100%"
+                            >
+                                <div className="hover:bg-gradient flex-1 w-full h-16 rounded-bl-lg">
+                                    <div className="flex justify-center items-center h-full">
+                                        {iconGithub}
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a
-                            href={linkHosting}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-full h-100%"
-                        >
-                            <div className="hover:bg-gradient flex-1 w-full h-16 rounded-br-lg">
-                                <div className="flex justify-center items-center h-full">
-                                    {iconHosting}
+                            </a>
+                            <a
+                                href={linkHosting}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-full h-100%"
+                            >
+                                <div className="hover:bg-gradient flex-1 w-full h-16 rounded-br-lg">
+                                    <div className="flex justify-center items-center h-full">
+                                        {iconHosting}
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
+                    </motion.div>
                 )
             )}
         </>
