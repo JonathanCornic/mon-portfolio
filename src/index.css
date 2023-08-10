@@ -14,6 +14,9 @@
     h2 {
         @apply font-primary text-3xl font-bold lg:text-6xl xl:text-7xl text-gradient;
     }
+    h3 {
+        @apply font-primary text-lg font-bold lg:text-xl xl:text-2xl text-gradient;
+    }
 
     p {
         @apply font-secondary text-xs md:text-sm lg:text-lg xl:text-2xl;
