@@ -12,7 +12,7 @@ export default function SocialLinks() {
                             href={href}
                             download={download}
                             target="_blank"
-                            rel="noreferrer"
+                            rel="noopener noreferrer"
                             className="flex justify-between items-center w-full"
                         >
                             <span className="hidden 2xl:block">{name}</span>

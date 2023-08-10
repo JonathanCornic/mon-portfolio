@@ -76,7 +76,7 @@ export default function Contact() {
                         <div>
                             <button
                                 type="submit"
-                                className="btn hover:scale-110 duration-700"
+                                className="btn"
                             >
                                 Envoyer
                             </button>
