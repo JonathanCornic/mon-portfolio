@@ -1,4 +1,4 @@
-import Image from '../../medias/images/my-profil-img.jpg'
+import Image from '../../medias/images/my-profil-img.webp'
 import { motion } from 'framer-motion'
 import fadeIn from '../../variants'
 export default function About() {

@@ -1,8 +1,8 @@
 import { FaGithub } from 'react-icons/fa'
 import { AiFillProfile } from 'react-icons/ai'
-import ImageProjet1 from '../medias/images/previewProjectsImg/test.jpg'
-import ImageProjet2 from '../medias/images/previewProjectsImg/test.jpg'
-import ImageProjet3 from '../medias/images/previewProjectsImg/test.jpg'
+import ImageProjet1 from '../medias/images/previewProjectsImg/test.webp'
+import ImageProjet2 from '../medias/images/previewProjectsImg/test.webp'
+import ImageProjet3 from '../medias/images/previewProjectsImg/test.webp'
 
 const projets = [
     {

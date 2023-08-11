@@ -1,4 +1,4 @@
-import BgImage from '../../medias/images/bg-hero.jpg'
+import BgImage from '../../medias/images/bg-hero.webp'
 import Logo from '../../medias/svg/personal-logo-bg-trans.svg'
 import SocialLinks from '../elements/SocialLinks'
 import links from '../../data/socialLinksData'

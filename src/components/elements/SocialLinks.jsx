@@ -5,7 +5,7 @@ SocialLinks.propTypes = {
     name: PropTypes.string.isRequired,
     child: PropTypes.node.isRequired,
     href: PropTypes.string.isRequired,
-    download: PropTypes.bool.isRequired,
+    download: PropTypes.bool,
 }
 export default function SocialLinks({ id, name, child, href, download }) {
     return (
