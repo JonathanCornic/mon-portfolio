@@ -1,6 +1,7 @@
 import BgImage from '../../medias/images/bg-hero.jpg'
 import Logo from '../../medias/svg/personal-logo-bg-trans.svg'
 import SocialLinks from '../elements/SocialLinks'
+import links from '../../data/socialLinksData'
 import { motion } from 'framer-motion'
 import fadeIn from '../../variants'
 
@@ -57,7 +58,22 @@ export default function Herotop() {
                     </motion.div>
                 </div>
                 <div className="mt-10">
-                    <SocialLinks />
+                    <div className="2xl:flex 2xl:flex-col 2xl:top-[42%] 2xl:left-0 2xl:fixed">
+                        <ul className="flex 2xl:block">
+                            {links.map(
+                                ({ id, child, name, href, download }) => (
+                                    <SocialLinks
+                                        key={id}
+                                        id={id}
+                                        child={child}
+                                        name={name}
+                                        href={href}
+                                        download={download}
+                                    />
+                                )
+                            )}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
