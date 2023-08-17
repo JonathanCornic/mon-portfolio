@@ -1,5 +1,6 @@
 {
-  "projects": {
-    "default": "mon-portfolio-a211f"
-  }
+    "projects": {
+        "default": "mon-portfolio-a211f",
+        "custom-domain": "jonathan-cornic.com"
+    }
 }

@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /downloads/
 
-Sitemap: https://mon-portfolio-a211f.web.app/sitemap-file.xml
+Sitemap: https://jonathan-cornic.com/sitemap-file.xml
