@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /downloads/
 
-Sitemap: https://jonathan-cornic.com/sitemap-file.xml
+Sitemap: https://jonathan-cornic.com/sitemap.xml
