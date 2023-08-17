@@ -24,11 +24,11 @@ export default function Projects() {
                     </p>
                     <div className="btn w-24 mx-auto mb-10">
                         {links
-                            .filter((link) => link.id === 2)
+                            .filter((link) => link.id === "social002")
                             .map(({ id, child, name, href }) => (
                                 <SocialButton
                                     key={id}
-                                    id={id}
+                                    id={`projectsSocialButton_${id}`}
                                     name={name}
                                     child={child}
                                     href={href}

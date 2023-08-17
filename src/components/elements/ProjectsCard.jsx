@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import fadeIn from '../../variants'
 
 ProjectsCard.propTypes = {
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     linkGithub: PropTypes.string.isRequired,
     linkHosting: PropTypes.string.isRequired,

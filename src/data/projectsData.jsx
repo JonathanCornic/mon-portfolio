@@ -6,51 +6,69 @@ import ImageProjet3 from '../medias/images/previewProjectsImg/test.webp'
 
 const projets = [
     {
-        id: 1,
+        id: 'projet001',
         name: 'kasa',
         imgPreview: ImageProjet1,
         iconGithub: (
             <>
-                <FaGithub size={30} />
+                <FaGithub
+                    size={30}
+                    aria-label="Lien vers le dépôt GitHub du projet kasa"
+                />
             </>
         ),
         iconHosting: (
             <>
-                <AiFillProfile size={30} />
+                <AiFillProfile
+                    size={30}
+                    aria-label="Lien vers l'hébergement du projet kasa"
+                />
             </>
         ),
         linkGithub: 'https://github.com/JonathanCornic/kasa',
         linkHosting: 'https://kasa-2m0.pages.dev/',
     },
     {
-        id: 2,
+        id: 'projet002',
         name: 'burger-house',
         imgPreview: ImageProjet2,
         iconGithub: (
             <>
-                <FaGithub size={30} />
+                <FaGithub
+                    size={30}
+                    aria-label="Lien vers le dépôt GitHub du projet burger-house"
+                />
             </>
         ),
         iconHosting: (
             <>
-                <AiFillProfile size={30} />
+                <AiFillProfile
+                    size={30}
+                    aria-label="Lien vers l'hébergement du projet burger-house"
+                />
             </>
         ),
         linkGithub: 'https://github.com/JonathanCornic/burger-house',
         linkHosting: 'https://burger-house.pages.dev/',
     },
     {
-        id: 3,
+        id: 'projet003',
         name: 'portfolio-nina-carducci',
         imgPreview: ImageProjet3,
         iconGithub: (
             <>
-                <FaGithub size={30} />
+                <FaGithub
+                    size={30}
+                    aria-label="Lien vers le dépôt GitHub du projet portfolio-nina-carducci"
+                />
             </>
         ),
         iconHosting: (
             <>
-                <AiFillProfile size={30} />
+                <AiFillProfile
+                    size={30}
+                    aria-label="Lien vers l'hébergement du projet portfolio-nina-carducci"
+                />
             </>
         ),
         linkGithub: 'https://github.com/JonathanCornic/Portfolio-nina-carducci',

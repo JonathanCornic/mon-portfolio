@@ -3,31 +3,34 @@ import { BsFillPersonLinesFill } from 'react-icons/bs'
 
 const links = [
     {
-        id: 1,
+        id: 'social001',
         name: 'LinkedIn',
         child: (
             <>
-                <FaLinkedin size={30} />
+                <FaLinkedin size={30} aria-label="Lien vers mon linkedin" />
             </>
         ),
         href: 'https://www.linkedin.com/in/jonathan-cornic-024607262/',
     },
     {
-        id: 2,
+        id: 'social002',
         name: 'Github',
         child: (
             <>
-                <FaGithub size={30} />
+                <FaGithub size={30} aria-label="Lien vers mon github" />
             </>
         ),
         href: 'https://github.com/JonathanCornic',
     },
     {
-        id: 3,
+        id: 'social003',
         name: 'CV',
         child: (
             <>
-                <BsFillPersonLinesFill size={30} />
+                <BsFillPersonLinesFill
+                    size={30}
+                    aria-label="Telecharger mon cv"
+                />
             </>
         ),
         href: '/cv.pdf',

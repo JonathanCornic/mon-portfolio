@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 
 SocialLinks.propTypes = {
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     child: PropTypes.node.isRequired,
     href: PropTypes.string.isRequired,
