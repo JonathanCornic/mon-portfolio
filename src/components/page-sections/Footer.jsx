@@ -1,11 +1,18 @@
+import { motion } from 'framer-motion'
 import links from '../../data/socialLinksData'
 export default function Footer() {
     return (
         <section>
+            <motion.div
+                animate={{ scaleX: 0 }}
+                whileInView={{ scaleX: 0.9 }}
+                transition={{ duration: 0.8 }}
+                className="h-[0.5px] bg-gradient mx-auto"
+            ></motion.div>
             <div className="w-full p-12">
                 <div className="flex flex-col items-center justify-center xl:flex-row xl:items-end">
-                    <div className='flex-1 flex flex-col items-center justify-center xl:items-start'>
-                        <p className='underline m-5'>Contact</p>
+                    <div className="flex-1 flex flex-col items-center justify-center xl:items-start">
+                        <p className="underline m-5">Contact</p>
                         <div className="flex flex-col items-center justify-center gap-10 m-5 xl:items-start">
                             <a
                                 className="text-xs md:text-lg lg:text-xl xl:text-2xl"
@@ -13,7 +20,7 @@ export default function Footer() {
                             >
                                 cornicjonathan@gmail.com
                             </a>
-                            <p className=''>06 62 96 23 80</p>
+                            <p className="">06 62 96 23 80</p>
                         </div>
                         <div>
                             <ul className="flex gap-10 m-5">
@@ -34,7 +41,7 @@ export default function Footer() {
                             </ul>
                         </div>
                     </div>
-                    <div className='flex-1 flex flex-col items-center justify-center xl:items-end'>
+                    <div className="flex-1 flex flex-col items-center justify-center xl:items-end">
                         <div>
                             <p className="m-5">
                                 Réalisé avec React et Tailwind
