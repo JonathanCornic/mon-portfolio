@@ -43,4 +43,4 @@ ExpiresDefault "access plus 2 days"
 # END Expires Headers
 
 
-Header set Content-Security-Policy "script-src 'self';"
+# Header set Content-Security-Policy "script-src 'self';"

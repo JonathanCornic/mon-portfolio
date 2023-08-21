@@ -25,7 +25,7 @@ export default function useContactForm() {
                 message: formData.message,
             })
 
-            await Sendmail()
+            await Sendmail(formData)
 
             alert('Votre message a bien été envoyé', docRef.id)
         } catch (error) {

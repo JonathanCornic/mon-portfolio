@@ -10,6 +10,14 @@
                     {
                         "key": "Cache-Control",
                         "value": "max-age=31536000"
+                    },
+                    {
+                        "key": "Access-Control-Allow-Origin",
+                        "value": "https://webcache.googleusercontent.com"
+                    },
+                    {
+                        "key": "Access-Control-Allow-Origin",
+                        "value": "http://webcache.googleusercontent.com"
                     }
                 ]
             }
