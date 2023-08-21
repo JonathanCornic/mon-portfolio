@@ -20,17 +20,19 @@ export default function Herotop() {
             <div className="min-w-[90%] min-h-[90%] p-5 flex flex-col items-center justify-center text-center lg:text-left">
                 <div className="flex flex-col lg:flex-row w-full items-center justify-around xl:p-16 mix-blend-lighten">
                     <div className="max-w-[700px] z-10">
-                        <motion.h1
+                        <motion.div
                             variants={fadeIn('right', 0.3)}
                             initial="hidden"
                             whileInView={'show'}
                             viewport={{ once: false, amount: 0.3 }}
                         >
-                            Développement web{' '}
-                            <span className="text-gradient whitespace-nowrap">
-                                Front-end
-                            </span>
-                        </motion.h1>
+                            <h1>
+                                Développement web{' '}
+                                <span className="text-gradient whitespace-nowrap">
+                                    Front-end
+                                </span>
+                            </h1>
+                        </motion.div>
                         <motion.p
                             variants={fadeIn('up', 0.3)}
                             initial="hidden"
