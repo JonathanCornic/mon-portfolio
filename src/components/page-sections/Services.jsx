@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import fadeIn from '../../variants'
 export default function Services() {
     return (
-        <div id="Services" className="section">
+        <div id="Services" className="section py-20 my-20">
             <div className="container mx-auto">
                 <div className="flex flex-col xl:flex-row xl:items-center">
                     <motion.div

@@ -7,7 +7,7 @@ import projets from '../../data/projectsData'
 
 export default function Projects() {
     return (
-        <div id="Projets" className="section">
+        <div id="Projets" className="section py-20 my-20">
             <div className="container mx-auto flex flex-col items-center">
                 <motion.div
                     variants={fadeIn('down', 0.3)}

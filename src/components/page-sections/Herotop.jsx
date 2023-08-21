@@ -9,7 +9,7 @@ export default function Herotop() {
     return (
         <section
             id="Accueil"
-            className="section py-20"
+            className="section py-20 mb-20"
             style={{
                 backgroundImage: `url(${BgImage})`,
                 backgroundRepeat: 'no-repeat',

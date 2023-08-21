@@ -26,14 +26,14 @@ export default function ProjectsCard({
             <motion.div
                 id={id}
                 name={name}
-                variants={fadeIn('up', 0.3)}
+                variants={fadeIn('up', 0.3, 0.1)}
                 initial="hidden"
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.3 }}
-                className="w-96 border rounded-lg overflow-hidden hover:border-yellow-700 transition-all duration-1000"
+                className="sm:w-96 border rounded-lg overflow-hidden hover:border-yellow-700 transition-all duration-1000"
             >
                 <motion.div
-                    variants={fadeIn('right', 0.3)}
+                    variants={fadeIn('right', 0.9)}
                     initial="hidden"
                     whileInView={'show'}
                     viewport={{ once: false, amount: 0.3 }}

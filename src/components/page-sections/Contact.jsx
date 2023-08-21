@@ -6,7 +6,7 @@ export default function Contact() {
     const { formData, handleChange, handleSubmit } = useContactForm()
 
     return (
-        <section id="Contact" className="section">
+        <section id="Contact" className="section py-20 my-20">
             <div className="container mx-auto 2xl:px-40">
                 <div className="flex flex-col lg:flex-row py-10">
                     <motion.div
