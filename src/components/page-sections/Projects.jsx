@@ -16,15 +16,15 @@ export default function Projects() {
                     viewport={{ once: false, amount: 0.3 }}
                     className="text-center"
                 >
-                    <h2 className="">Mes derniers Projets</h2>
+                    <h2>Mes derniers Projets</h2>
                     <p className="py-10">
                         Voici les derniers projets que j&apos;ai pu éffectuer,
                         vous pouvez retrouver l&apos;ensemble de mes travaux en
                         cliquant sur le bouton
                     </p>
-                    <div className="btn w-24 mx-auto mb-10">
+                    <div className="btn w-24 mx-auto mb-24">
                         {links
-                            .filter((link) => link.id === "social002")
+                            .filter((link) => link.id === 'social002')
                             .map(({ id, child, name, href }) => (
                                 <SocialButton
                                     key={id}
@@ -42,6 +42,8 @@ export default function Projects() {
                             key={item.id}
                             id={item.id}
                             name={item.name}
+                            description={item.description}
+                            stack={item.stack}
                             linkGithub={item.linkGithub}
                             linkHosting={item.linkHosting}
                             iconGithub={item.iconGithub}

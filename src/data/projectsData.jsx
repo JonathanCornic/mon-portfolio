@@ -8,6 +8,8 @@ const projets = [
     {
         id: 'projet001',
         name: 'kasa',
+        description: "Création d'un site de location immobilière",
+        stack: 'React, CSS',
         imgPreview: ImageProjet1,
         iconGithub: (
             <>
@@ -31,6 +33,8 @@ const projets = [
     {
         id: 'projet002',
         name: 'burger-house',
+        description: "integration d'une landing page d'un site de fast food",
+        stack: 'React, Tailwind CSS',
         imgPreview: ImageProjet2,
         iconGithub: (
             <>
@@ -54,6 +58,8 @@ const projets = [
     {
         id: 'projet003',
         name: 'portfolio-nina-carducci',
+        description: "Débug et optimisation du portfolio de nina carducci",
+        stack: 'Javascript, CSS, HTML',
         imgPreview: ImageProjet3,
         iconGithub: (
             <>

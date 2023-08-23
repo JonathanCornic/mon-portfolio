@@ -5,7 +5,7 @@ export default function About() {
     return (
         <section id="A propos" className="section py-20 my-20">
             <div className="container mx-auto">
-                <div className="flex flex-col  lg:flex-row lg:items-center lg:gap-x-20">
+                <div className="flex flex-col lg:flex-row lg:items-center lg:gap-x-20">
                     <motion.div
                         variants={fadeIn('right', 0.3)}
                         initial="hidden"
@@ -13,7 +13,7 @@ export default function About() {
                         viewport={{ once: false, amount: 0.3 }}
                         className="flex-1 mix-blend-lighten"
                     >
-                        <img src={Image} alt="photo de mon profil" />
+                        <img src={Image} alt="photo de mon profil" className='w-[100%] h-[100%]'/>
                     </motion.div>
                     <motion.div
                         variants={fadeIn('left', 0.3)}
