@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import { motion } from 'framer-motion'
 import fadeIn from '../../variants'
+import { useModalContext } from '../../functions/modalContext'
 
 ProjectsCard.propTypes = {
     id: PropTypes.string.isRequired,
@@ -25,6 +26,7 @@ export default function ProjectsCard({
     iconHosting,
     imgPreview,
 }) {
+    const { openModal } = useModalContext()
     return (
         <>
             <motion.div
@@ -43,6 +45,7 @@ export default function ProjectsCard({
                         whileInView={'show'}
                         viewport={{ once: false, amount: 0.3 }}
                         className="overflow-hidden"
+                        onClick={openModal}
                     >
                         <img
                             src={imgPreview}
