@@ -1,6 +1,6 @@
 import useContactForm from '../../functions/useContactForm'
 import { motion } from 'framer-motion'
-import fadeIn from '../../variants'
+import fadeIn from '../../functions/variants'
 
 export default function Contact() {
     const { formData, handleChange, handleSubmit } = useContactForm()
@@ -74,10 +74,7 @@ export default function Contact() {
                             />
                         </div>
                         <div>
-                            <button
-                                type="submit"
-                                className="btn"
-                            >
+                            <button type="submit" className="btn">
                                 Envoyer
                             </button>
                         </div>

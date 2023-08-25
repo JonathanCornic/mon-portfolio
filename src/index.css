@@ -21,6 +21,9 @@
     p {
         @apply font-secondary text-xs md:text-sm lg:text-lg xl:text-2xl;
     }
+    li {
+        @apply font-secondary text-xs md:text-sm lg:text-lg xl:text-2xl;
+    }
     .btn{
         @apply bg-gradient rounded-lg py-2 px-4 hover:scale-110 duration-500
     }

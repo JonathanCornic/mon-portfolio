@@ -3,7 +3,7 @@ import Logo from '../../medias/svg/personal-logo-bg-trans.svg'
 import SocialLinks from '../elements/SocialLinks'
 import links from '../../data/socialLinksData'
 import { motion } from 'framer-motion'
-import fadeIn from '../../variants'
+import fadeIn from '../../functions/variants'
 
 export default function Herotop() {
     return (

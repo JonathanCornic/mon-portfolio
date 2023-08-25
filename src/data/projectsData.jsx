@@ -1,8 +1,11 @@
 import { FaGithub } from 'react-icons/fa'
 import { AiFillProfile } from 'react-icons/ai'
 import ImageProjet1 from '../medias/images/previewProjectsImg/test.webp'
+import ImageModale1 from '../medias/images/modalProjectsImg/kasa-modal.webp'
 import ImageProjet2 from '../medias/images/previewProjectsImg/test.webp'
+import ImageModale2 from '../medias/images/modalProjectsImg/burger-house-modal.webp'
 import ImageProjet3 from '../medias/images/previewProjectsImg/test.webp'
+import ImageModale3 from '../medias/images/modalProjectsImg/nina-carducci-modal.webp'
 
 const projets = [
     {
@@ -11,6 +14,7 @@ const projets = [
         description: "Création d'un site de location immobilière",
         stack: 'React, CSS',
         imgPreview: ImageProjet1,
+        imgModal: ImageModale1,
         iconGithub: (
             <>
                 <FaGithub
@@ -36,6 +40,7 @@ const projets = [
         description: "integration d'une landing page d'un site de fast food",
         stack: 'React, Tailwind CSS',
         imgPreview: ImageProjet2,
+        imgModal: ImageModale2,
         iconGithub: (
             <>
                 <FaGithub
@@ -58,9 +63,10 @@ const projets = [
     {
         id: 'projet003',
         name: 'portfolio-nina-carducci',
-        description: "Débug et optimisation du portfolio de nina carducci",
+        description: 'Débug et optimisation du portfolio de nina carducci',
         stack: 'Javascript, CSS, HTML',
         imgPreview: ImageProjet3,
+        imgModal: ImageModale3,
         iconGithub: (
             <>
                 <FaGithub

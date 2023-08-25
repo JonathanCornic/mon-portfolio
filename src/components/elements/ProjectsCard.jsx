@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import { motion } from 'framer-motion'
-import fadeIn from '../../variants'
+import fadeIn from '../../functions/variants'
 import { useModalContext } from '../../functions/modalContext'
 
 ProjectsCard.propTypes = {
@@ -13,6 +13,7 @@ ProjectsCard.propTypes = {
     iconGithub: PropTypes.node.isRequired,
     iconHosting: PropTypes.node.isRequired,
     imgPreview: PropTypes.string.isRequired,
+    imgModal: PropTypes.string,
 }
 
 export default function ProjectsCard({
@@ -25,6 +26,7 @@ export default function ProjectsCard({
     iconGithub,
     iconHosting,
     imgPreview,
+    imgModal,
 }) {
     const { openModal } = useModalContext()
     return (
@@ -37,15 +39,14 @@ export default function ProjectsCard({
                 viewport={{ once: false, amount: 0.3 }}
                 className="w-92 lg:w-96"
             >
-                <h3 className="text-center pb-5">{name}</h3>
                 <motion.div className="sm:w-96 border rounded-lg overflow-hidden hover:border-yellow-700 transition-all duration-1000">
                     <motion.div
                         variants={fadeIn('right', 0.9)}
                         initial="hidden"
                         whileInView={'show'}
                         viewport={{ once: false, amount: 0.3 }}
-                        className="overflow-hidden"
-                        onClick={openModal}
+                        className="overflow-hidden cursor-pointer"
+                        onClick={() => openModal({id, name, description, stack, linkGithub, linkHosting, iconGithub, iconHosting, imgPreview, imgModal})}
                     >
                         <img
                             src={imgPreview}
@@ -79,11 +80,7 @@ export default function ProjectsCard({
                             </div>
                         </a>
                     </div>
-                </motion.div>{' '}
-                <div>
-                    <p className="text-center my-5 flex-1">{description}</p>
-                    <p className="text-center flex-1">{stack}</p>
-                </div>
+                </motion.div>
             </motion.div>
         </>
     )

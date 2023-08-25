@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion'
-import fadeIn from '../../variants'
+import fadeIn from '../../functions/variants'
 import SocialButton from '../elements/SocialButton'
 import links from '../../data/socialLinksData'
 import ProjectsCard from '../elements/ProjectsCard'
-import projets from '../../data/projectsData'
+import projects from '../../data/projectsData'
 
 export default function Projects() {
     return (
@@ -22,7 +22,7 @@ export default function Projects() {
                         vous pouvez retrouver l&apos;ensemble de mes travaux en
                         cliquant sur le bouton
                     </p>
-                    <div className="btn w-24 mx-auto mb-24">
+                    <div className="btn w-24 mx-auto mb-10">
                         {links
                             .filter((link) => link.id === 'social002')
                             .map(({ id, child, name, href }) => (
@@ -37,7 +37,7 @@ export default function Projects() {
                     </div>
                 </motion.div>
                 <div className="flex flex-col gap-y-10 xl:flex-row xl:gap-x-10">
-                    {projets.map((item) => (
+                    {projects.map((item) => (
                         <ProjectsCard
                             key={item.id}
                             id={item.id}
@@ -49,6 +49,7 @@ export default function Projects() {
                             iconGithub={item.iconGithub}
                             iconHosting={item.iconHosting}
                             imgPreview={item.imgPreview}
+                            imgModal={item.imgModal}
                         />
                     ))}
                 </div>

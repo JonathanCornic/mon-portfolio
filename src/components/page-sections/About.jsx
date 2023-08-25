@@ -1,6 +1,6 @@
 import Image from '../../medias/images/my-profil-img.webp'
 import { motion } from 'framer-motion'
-import fadeIn from '../../variants'
+import fadeIn from '../../functions/variants'
 export default function About() {
     return (
         <section id="A propos" className="section py-20 my-20">
@@ -13,7 +13,11 @@ export default function About() {
                         viewport={{ once: false, amount: 0.3 }}
                         className="flex-1 mix-blend-lighten"
                     >
-                        <img src={Image} alt="photo de mon profil" className='w-[100%] h-[100%]'/>
+                        <img
+                            src={Image}
+                            alt="photo de mon profil"
+                            className="w-[100%] h-[100%]"
+                        />
                     </motion.div>
                     <motion.div
                         variants={fadeIn('left', 0.3)}

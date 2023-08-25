@@ -8,17 +8,20 @@ ModalProvider.propTypes = {
 };
 export function ModalProvider({ children }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
 
-  const openModal = () => {
+  const openModal = (project) => {
+    setSelectedProject(project);
     setIsModalOpen(true);
   };
 
   const closeModal = () => {
+    setSelectedProject(null)
     setIsModalOpen(false);
   };
 
   return (
-    <ModalContext.Provider value={{ isModalOpen, openModal, closeModal }}>
+    <ModalContext.Provider value={{ isModalOpen, selectedProject, openModal, closeModal }}>
       {children}
     </ModalContext.Provider>
   );
