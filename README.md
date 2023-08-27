@@ -30,10 +30,16 @@ Réalisation de mon portfolio
 
 ## Détails techniques
 
+- Nom de domaine aquis chez [Ionos](https://www.ionos.fr/)
+- Hebergement et base de donnée chez [Firebase](https://firebase.google.com/)
+- Automatisation des mails lors de la soumission des formulaire chez [Brevo](https://www.brevo.com/fr/)
 
+## Voir le rendu hébergé 
+
+Vous pouvez consulter se portfolio en ligne [ici](https://jonathan-conric.com)
 
 ## Comment me contacter
 
-Si vous avez des questions, des commentaires ou des propositions de collaboration, n'hésitez pas à me contacter par e-mail à cornicjonathan@gmail.com ou via mon profil LinkedIn à https://www.linkedin.com/in/jonathan-cornic-024607262/.
+Si vous avez des questions, des commentaires ou des propositions de collaboration, n'hésitez pas à me contacter par [Mail](mailto:cornicjonathan@gmail.com) ou via mon profil [LinkedIn](https://www.linkedin.com/in/jonathan-cornic-024607262/).
 
-Je suis fier d'avoir pu réaliser ce projet qui m'à appris pas mal de choses sur react, et je suis heureux de partager cette expérience avec vous.
+Je suis fier d'avoir pu réaliser ce projet avec lequel j'ai pu tester framer motion, react scroll, l'automatisation avec Brevo, Firebase pour le hosting et la database et confirmer mes compétences en React, et je suis heureux de partager cette expérience avec vous.
