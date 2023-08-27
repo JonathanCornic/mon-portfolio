@@ -27,6 +27,7 @@ Réalisation de mon portfolio
 - React scroll ( Smooth scroll navigation )
 - Axios ( Post )
 - Firebase ( Hosting et Database )
+- Git ( Versioning )
 
 ## Détails techniques
 
@@ -36,7 +37,7 @@ Réalisation de mon portfolio
 
 ## Voir le rendu hébergé 
 
-Vous pouvez consulter ce portfolio en ligne [ici](https://jonathan-conric.com)
+Vous pouvez consulter ce portfolio en ligne [ici](https://jonathan-cornic.com)
 
 ## Comment me contacter
 
