@@ -3,7 +3,7 @@ Projet 8 OpenClassrooms
 
 Réalisation de mon portfolio
 
-![Portfolio](https://img.shields.io/badge/Portfolio-orange)
+![Portfolio](https://img.shields.io/badge/Mon%20Portfolio-orange)
 
 <div align="center">
 <img src="https://github.com/JonathanCornic/mon-portfolio/blob/main/herotop-Preview.png">
