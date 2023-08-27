@@ -1,10 +1,10 @@
 import { FaGithub } from 'react-icons/fa'
 import { AiFillProfile } from 'react-icons/ai'
-import ImageProjet1 from '../medias/images/previewProjectsImg/test.webp'
+import ImageProjet1 from '../medias/images/previewProjectsImg/kasa-preview.webp'
 import ImageModale1 from '../medias/images/modalProjectsImg/kasa-modal.webp'
-import ImageProjet2 from '../medias/images/previewProjectsImg/test.webp'
+import ImageProjet2 from '../medias/images/previewProjectsImg/burger-house-preview.webp'
 import ImageModale2 from '../medias/images/modalProjectsImg/burger-house-modal.webp'
-import ImageProjet3 from '../medias/images/previewProjectsImg/test.webp'
+import ImageProjet3 from '../medias/images/previewProjectsImg/nina-carducci-preview.webp'
 import ImageModale3 from '../medias/images/modalProjectsImg/nina-carducci-modal.webp'
 
 const projets = [

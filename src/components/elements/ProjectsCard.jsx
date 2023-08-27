@@ -51,7 +51,7 @@ export default function ProjectsCard({
                         <img
                             src={imgPreview}
                             alt={name}
-                            className="w-96 h-64 sm:h-72 rounded-t-lg object-cover hover:scale-110 transition-all duration-700"
+                            className="w-96 h-64 sm:h-72 rounded-t-lg object-cover scale-125 hover:scale-150 transition-all duration-700 rotate-12"
                         />
                     </motion.div>
                     <div className="flex items-end">
