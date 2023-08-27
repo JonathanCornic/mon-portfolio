@@ -27,7 +27,7 @@ export default function Contact() {
                         initial="hidden"
                         whileInView={'show'}
                         viewport={{ once: false, amount: 0.3 }}
-                        className="flex-1 border rounded-2xl flex flex-col gap-y-6 p-5 pb-10"
+                        className="flex-1 border rounded-2xl flex flex-col gap-y-6 p-5 pb-10 shadow-2xl shadow-gray-900"
                     >
                         <div className="w-full">
                             <label htmlFor="name" className="invisible">

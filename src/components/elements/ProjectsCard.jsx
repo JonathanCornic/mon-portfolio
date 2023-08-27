@@ -37,7 +37,7 @@ export default function ProjectsCard({
                 initial="hidden"
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.3 }}
-                className="w-92 lg:w-96"
+                className="w-92 lg:w-96 shadow-2xl shadow-gray-900 rounded-lg"
             >
                 <motion.div className="sm:w-96 border rounded-lg overflow-hidden hover:border-yellow-700 transition-all duration-1000">
                     <motion.div
