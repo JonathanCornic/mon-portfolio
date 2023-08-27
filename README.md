@@ -36,7 +36,7 @@ Réalisation de mon portfolio
 
 ## Voir le rendu hébergé 
 
-Vous pouvez consulter se portfolio en ligne [ici](https://jonathan-conric.com)
+Vous pouvez consulter ce portfolio en ligne [ici](https://jonathan-conric.com)
 
 ## Comment me contacter
 
