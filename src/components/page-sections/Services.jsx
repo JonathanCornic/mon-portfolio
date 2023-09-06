@@ -17,7 +17,7 @@ export default function Services() {
                         <p>
                             Expérience et Expertise au Service de Votre Vision
                         </p>
-                        <h3 className="py-5">Formation OpenClarooms</h3>
+                        <h3 className="py-5">Formation OpenClassrooms</h3>
                         <p>Diplôme de niveau 5 (bac +2)</p>
                         <h3 className="py-5">Ma stack téchnologique</h3>
                         <ul className="flex gap-x-1 flex-wrap">
